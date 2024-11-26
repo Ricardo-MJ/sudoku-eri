@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sudoku-container">
+    <header>
+      <h1>Sudoku Challenge</h1>
+      <p>¡Elige la dificultad y resuelve el reto!</p>
+    </header>
+    <div class="controls">
+      <button class="btn" onclick="setDifficulty('easy')">Fácil</button>
+      <button class="btn" onclick="setDifficulty('medium')">Medio</button>
+      <button class="btn" onclick="setDifficulty('hard')">Difícil</button>
+      <button class="btn" onclick="resetGame()">Reiniciar</button>
+      <button class="btn" onclick="validateSolution()">Validar</button>
+      <button class="btn" onclick="giveHint()">Pista</button>
+    </div>
+    <div class="sudoku-grid" id="sudoku-grid"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
